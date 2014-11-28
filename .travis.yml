@@ -4,9 +4,10 @@ python:
 # command to install dependencies
 install:
 - pip install pytest pytest-cov
+- pip install mockito
+- pip nstall pep8
+- pip install radon
 - pip install coveralls
 # command to run tests
 script:
 - py.test --cov . --cov-report term-missing
-after_success:
-- coveralls
