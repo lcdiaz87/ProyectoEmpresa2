@@ -1,9 +1,10 @@
 language: python
 python:
-- "3.3"
 - "2.7"
-- "2.6"
-# command to install dependencies, e.g. pip install -r requirements.txt
-install: <dependencias_a_instalar>
-# command to run tests, e.g. python setup.py test
-script: <comando_de_pruebas_software_a_ejecutar>
+# command to install dependencies
+install:
+- pip install pytest pytest-cov
+- pip install mockito
+# command to run tests
+script:
+- py.test --cov . --cov-report term-missing
