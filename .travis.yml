@@ -4,7 +4,9 @@ python:
 # command to install dependencies
 install:
 - pip install pytest pytest-cov
-- pip install mockito
+- pip install coveralls
 # command to run tests
 script:
 - py.test --cov . --cov-report term-missing
+after_success:
+- coveralls
