@@ -1,0 +1,2 @@
+[![Build Status](https://travis-ci.org/lcdiaz87/ProyectoEmpresa2.svg?branch=master)](https://travis-ci.org/lcdiaz87/ProyectoEmpresa2)
+[![Coverage Status](https://coveralls.io/repos/lcdiaz87/ProyectoEmpresa2/badge.png?branch=master)](https://coveralls.io/r/lcdiaz87/ProyectoEmpresa2?branch=master)
