@@ -6,8 +6,14 @@ install:
 - pip install pytest pytest-cov
 - pip install mockito
 - pip install coveralls
+- pip install radon
+- pip install pep8
 # command to run tests
 script:
 - py.test --cov . --cov-report term-missing
 after_success:
 - coveralls
+- radon cc src/.
+- radon mi src/.
+- radon raw src/.
+- pep8 --first src/Empleado.py
