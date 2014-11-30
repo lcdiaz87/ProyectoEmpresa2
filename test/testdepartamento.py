@@ -5,7 +5,6 @@ from mockito import *
 from src.Empleado import *
 from src.Departamento import *
 
-
 __author__ = 'aulas'
 
 
