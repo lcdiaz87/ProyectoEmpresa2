@@ -2,10 +2,11 @@ language: python
 python:
 - "2.7"
 # command to install dependencies
- install:
+install:
 - pip install pytest pytest-cov
 - pip install mockito
 - pip install coveralls
+- pip install radon
 # command to run tests
 script:
 - py.test --cov . --cov-report term-missing
