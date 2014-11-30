@@ -3,15 +3,7 @@ python:
 - "2.7"
 # command to install dependencies
 install:
-- pip install pytest pytest-cov
-- pip install mockito
-- pip install coveralls
-- pip install radon
+- pip install pytest
 # command to run tests
 script:
-- py.test --cov . --cov-report term-missing
-after_success:
-- coveralls
-- radon cc src\.
-- radon raw src\.
-- radon mi src\.
+- py.test
