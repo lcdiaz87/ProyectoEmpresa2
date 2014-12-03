@@ -13,10 +13,10 @@ script:
 - py.test --cov . --cov-report term-missing
 after_success:
 - coveralls
-- radon cc src/. test/.
-- radon mi src/. test/.
-- radon raw src/. test/.
-- pep8 src/. test/.
+- radon cc src/. tests/.
+- radon mi src/. tests/.
+- radon raw src/. tests/.
+- pep8 src/. tests/.
 notifications:
     email:
         recipients:
