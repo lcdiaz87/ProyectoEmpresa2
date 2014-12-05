@@ -38,26 +38,3 @@ class TestDepartamento(TestCase):
         res = dept.get_salario_total()
         self.assertEqual(res, 1500)
 
-    def test_get_salario_total_anual(self):
-        """Test Salario Total Anual
-
-        Realiza una comprobacion para comprobar si el metodo get_salario_total_anual funciona bien, con la ayuda del mock
-        """
-        emp1 = mock(Empleado)
-        emp2 = mock(Empleado)
-        emp3 = mock(Empleado)
-        emp4 = mock(Empleado)
-        emp5 = mock(Empleado)
-        when(emp1).get_salario_anual().thenReturn(1000)
-        when(emp2).get_salario_anual().thenReturn(2000)
-        when(emp3).get_salario_anual().thenReturn(3000)
-        when(emp4).get_salario_anual().thenReturn(4000)
-        when(emp5).get_salario_anual().thenReturn(5000)
-        dept = Departamento("departamento2", 2)
-        dept.anadir_empleado(emp1)
-        dept.anadir_empleado(emp2)
-        dept.anadir_empleado(emp3)
-        dept.anadir_empleado(emp4)
-        dept.anadir_empleado(emp5)
-        res = dept.get_salario_total_anual()
-        self.assertEqual(res, 15000)
