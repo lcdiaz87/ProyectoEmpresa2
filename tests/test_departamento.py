@@ -36,5 +36,6 @@ class TestDepartamento(TestCase):
         dept.anadir_empleado(emp4)
         dept.anadir_empleado(emp5)
         res = dept.get_salario_total()
+
         self.assertEqual(res, 1500)
 
